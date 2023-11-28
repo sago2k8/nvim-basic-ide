@@ -52,3 +52,6 @@ vim.cmd [[set iskeyword+=-]]
 vim.g.netrw_banner = 0
 vim.g.netrw_mouse = 2
 
+-- toggle relative and norelativenumber
+vim.cmd("autocmd InsertEnter * :set norelativenumber")
+vim.cmd("autocmd InsertLeave * :set relativenumber")
